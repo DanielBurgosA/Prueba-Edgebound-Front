@@ -50,7 +50,7 @@ const SearchBar = () => {
           </div>
         </div>
       </div>
-      <Filters active={filterOpen}/>
+      <Filters active={filterOpen} close={handleClickFilter}/>
     </div>
   );
 };

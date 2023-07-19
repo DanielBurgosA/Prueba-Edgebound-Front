@@ -1,16 +1,22 @@
 import React, { useContext } from 'react';
 import { PokemonContext } from '../../context/PokemonContext';
-import { Form } from 'react-bootstrap';
+import { Button, Form, Row, Col } from 'react-bootstrap';
 import style from './Filters.module.css';
 
-export default function Filters({ active }) {
+export default function Filters({ active, close }) {
     const { handleCheckbox } = useContext(PokemonContext);
 
     return (
         <div className={`${style.containerFilters} ${active ? style.active : ''}`}>
             <div className={style.filterByType}>
-                <h4>Tipo</h4>
-
+                <Row>
+                    <Col>
+                        <h4>Tipo</h4>
+                    </Col>
+                    <Col>
+                        <Button onClick={close} className={style.boton}>close</Button>
+                    </Col>
+                </Row>
                 <Form.Check
                     type="checkbox"
                     id="bug"
