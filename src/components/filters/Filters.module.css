@@ -1,0 +1,45 @@
+.containerFilters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    color: #ffffff;
+    background-color: #ff0000;
+    height: 100%;
+    padding-top: 140px;
+    transition: left 0.3s ease-in-out; 
+    overflow-x: auto; 
+    z-index: 999;
+    padding-left: 20px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.containerFilters.active {
+    left: 0;
+}
+
+.filterByType {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.filterByType span {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.groupType {
+    display: flex;
+    gap: 10px;
+    margin-left: 15px;
+}
+
+.groupType label {
+    cursor: pointer;
+}

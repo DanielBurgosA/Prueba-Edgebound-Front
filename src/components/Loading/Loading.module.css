@@ -1,0 +1,21 @@
+
+@keyframes gira {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pokebola {
+  width: 20%;
+  height: 20%;
+  animation: gira 2s linear infinite; 
+}
+.centeronpage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

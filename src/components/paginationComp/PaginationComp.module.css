@@ -1,0 +1,8 @@
+.pagination {
+    font-size: 1.2rem;
+  }
+  
+  .pagination.my-pagination {
+    width: 100%;
+    margin: 0 auto;
+  }
