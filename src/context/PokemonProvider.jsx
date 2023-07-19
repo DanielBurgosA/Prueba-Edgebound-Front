@@ -56,7 +56,7 @@ export default function PokemonProvider({ children }) {
         try {
             const res = await axios.get(`${baseURL}pokemon/${id}`);
             const data = res.data;
-            data? setPokemonSelected(data) : (()=>{<Alert> No se encontró resultado</Alert>})()
+            data&& setPokemonSelected(data)
             data&&setIDPokemonSelected(data.id)
             if (currentPage!==Math.ceil(data.id/6)&&searching===true) {
                 setCurrentPage(Math.ceil(data.id/6));
